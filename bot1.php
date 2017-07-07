@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			$Displayname = "";
 			$pictureUrl = "";
 			$statusMessage = "";
-			$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
+			/*$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 			$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => 'bd31aa28b9185fe8a1ddb826dd018921']);
 			$response = $bot->getProfile($event['source']['userId']);
 			if ($response->isSucceeded()) {
@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			    $Displayname = $profile['displayName'];
 			    $pictureUrl = $profile['pictureUrl'];
 			    $statusMessage = $profile['statusMessage'];
-			}
+			}*/
 			
 			$text = "UserId : " . $event['source']['userId'] . "\nType : ". $event['message']['type']. "\nText : ". $event['message']['text'];
 			//$text = "DisplayName : " . $Displayname . ", pictureUrl : " . $pictureUrl . ", statusMessage : " . $statusMessage
