@@ -12,7 +12,7 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message') {
 			// Get text sent
-			$text = "UserId=" + $event['source']['userId'] + ", Type=" + $event['message']['type'] + ", Text=" + $event['message']['text'] + ", ";
+			$text = "UserId=" + $event['source']['userId'];// + ", Type=" + $event['message']['type'] + ", Text=" + $event['message']['text'] + ", ";
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
