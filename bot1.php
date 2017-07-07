@@ -26,8 +26,8 @@ if (!is_null($events['events'])) {
 			    $statusMessage = $profile['statusMessage'];
 			}
 			
-			//$text = "UserId : " . $event['source']['userId'] . "\nType : ". $event['message']['type']. "\nText : ". $event['message']['text'];
-			$text = "DisplayName : " . $Displayname . ", pictureUrl : " . $pictureUrl . ", statusMessage : " . $statusMessage
+			$text = "UserId : " . $event['source']['userId'] . "\nType : ". $event['message']['type']. "\nText : ". $event['message']['text'];
+			//$text = "DisplayName : " . $Displayname . ", pictureUrl : " . $pictureUrl . ", statusMessage : " . $statusMessage
 			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
